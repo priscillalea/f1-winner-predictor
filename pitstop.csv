@@ -1,0 +1,241 @@
+event_id,stop_no,driver,team,lap,time_of_day,time,total
+2025_australian_gp,1,Lando Norris,McLaren,18,14:23:45,2.412,22.345
+2025_australian_gp,1,Oscar Piastri,McLaren,19,14:24:10,2.398,22.210
+2025_australian_gp,1,Max Verstappen,Red Bull Racing,20,14:25:12,2.501,23.112
+2025_australian_gp,1,George Russell,Mercedes,21,14:26:05,2.476,22.890
+2025_australian_gp,1,Yuki Tsunoda,Racing Bulls,22,14:27:10,2.421,22.765
+2025_australian_gp,1,Alexander Albon,Williams,23,14:28:15,2.389,21.998
+2025_australian_gp,1,Charles Leclerc,Ferrari,24,14:29:20,2.401,22.145
+2025_australian_gp,1,Lewis Hamilton,Ferrari,25,14:30:25,2.387,21.876
+2025_australian_gp,1,Pierre Gasly,Alpine,26,14:31:30,2.476,22.890
+2025_australian_gp,1,Carlos Sainz,Williams,27,14:32:35,2.501,23.112
+2025_australian_gp,1,Isack Hadjar,Racing Bulls,28,14:33:40,2.412,22.345
+2025_australian_gp,1,Fernando Alonso,Aston Martin,29,14:34:45,2.398,22.210
+2025_australian_gp,1,Lance Stroll,Aston Martin,30,14:35:50,2.421,22.765
+2025_australian_gp,1,Jack Doohan,Alpine,31,14:36:55,2.389,21.998
+2025_australian_gp,1,Kimi Antonelli,Mercedes,32,14:38:00,2.401,22.145
+2025_australian_gp,1,Gabriel Bortoleto,Kick Sauber,33,14:39:05,2.387,21.876
+2025_australian_gp,1,Liam Lawson,Red Bull Racing,34,14:40:10,2.476,22.890
+2025_australian_gp,1,Nico Hulkenberg,Kick Sauber,35,14:41:15,2.501,23.112
+2025_australian_gp,1,Esteban Ocon,Haas,36,14:42:20,2.412,22.345
+2025_australian_gp,1,Oliver Bearman,Haas,37,14:43:25,2.398,22.210
+2025_chinese_gp,1,Oscar Piastri,McLaren,17,14:23:00,2.389,21.876
+2025_chinese_gp,1,Lando Norris,McLaren,18,14:24:05,2.401,22.145
+2025_chinese_gp,1,Max Verstappen,Red Bull Racing,19,14:25:10,2.476,22.890
+2025_chinese_gp,1,George Russell,Mercedes,20,14:26:15,2.501,23.112
+2025_chinese_gp,1,Lewis Hamilton,Ferrari,21,14:27:20,2.412,22.345
+2025_chinese_gp,1,Charles Leclerc,Ferrari,22,14:28:25,2.398,22.210
+2025_chinese_gp,1,Yuki Tsunoda,Racing Bulls,23,14:29:30,2.421,22.765
+2025_chinese_gp,1,Alexander Albon,Williams,24,14:30:35,2.389,21.998
+2025_chinese_gp,1,Pierre Gasly,Alpine,25,14:31:40,2.401,22.145
+2025_chinese_gp,1,Carlos Sainz,Williams,26,14:32:45,2.387,21.876
+2025_chinese_gp,1,Isack Hadjar,Racing Bulls,27,14:33:50,2.476,22.890
+2025_chinese_gp,1,Fernando Alonso,Aston Martin,28,14:34:55,2.501,23.112
+2025_chinese_gp,1,Lance Stroll,Aston Martin,29,14:36:00,2.412,22.345
+2025_chinese_gp,1,Jack Doohan,Alpine,30,14:37:05,2.398,22.210
+2025_chinese_gp,1,Kimi Antonelli,Mercedes,31,14:38:10,2.421,22.765
+2025_chinese_gp,1,Gabriel Bortoleto,Kick Sauber,32,14:39:15,2.389,21.998
+2025_chinese_gp,1,Liam Lawson,Red Bull Racing,33,14:40:20,2.401,22.145
+2025_chinese_gp,1,Nico Hulkenberg,Kick Sauber,34,14:41:25,2.387,21.876
+2025_chinese_gp,1,Esteban Ocon,Haas,35,14:42:30,2.476,22.890
+2025_chinese_gp,1,Oliver Bearman,Haas,36,14:43:35,2.501,23.112
+2025_japanese_gp,1,Max Verstappen,Red Bull Racing,16,14:22:00,2.498,22.765
+2025_japanese_gp,1,Lando Norris,McLaren,17,14:23:05,2.412,22.345
+2025_japanese_gp,1,Oscar Piastri,McLaren,18,14:24:10,2.398,22.210
+2025_japanese_gp,1,George Russell,Mercedes,19,14:25:15,2.476,22.890
+2025_japanese_gp,1,Kimi Antonelli,Mercedes,20,14:26:20,2.421,22.765
+2025_japanese_gp,1,Lewis Hamilton,Ferrari,21,14:27:25,2.389,21.998
+2025_japanese_gp,1,Charles Leclerc,Ferrari,22,14:28:30,2.401,22.145
+2025_japanese_gp,1,Yuki Tsunoda,Racing Bulls,23,14:29:35,2.387,21.876
+2025_japanese_gp,1,Alexander Albon,Williams,24,14:30:40,2.476,22.890
+2025_japanese_gp,1,Pierre Gasly,Alpine,25,14:31:45,2.501,23.112
+2025_japanese_gp,1,Carlos Sainz,Williams,26,14:32:50,2.412,22.345
+2025_japanese_gp,1,Isack Hadjar,Racing Bulls,27,14:33:55,2.398,22.210
+2025_japanese_gp,1,Fernando Alonso,Aston Martin,28,14:35:00,2.421,22.765
+2025_japanese_gp,1,Lance Stroll,Aston Martin,29,14:36:05,2.389,21.998
+2025_japanese_gp,1,Jack Doohan,Alpine,30,14:37:10,2.401,22.145
+2025_japanese_gp,1,Gabriel Bortoleto,Kick Sauber,31,14:38:15,2.387,21.876
+2025_japanese_gp,1,Liam Lawson,Red Bull Racing,32,14:39:20,2.476,22.890
+2025_japanese_gp,1,Nico Hulkenberg,Kick Sauber,33,14:40:25,2.501,23.112
+2025_japanese_gp,1,Esteban Ocon,Haas,34,14:41:30,2.412,22.345
+2025_japanese_gp,1,Oliver Bearman,Haas,35,14:42:35,2.398,22.210
+2025_bahrain_gp,1,Oscar Piastri,McLaren,17,14:22:30,2.389,21.876
+2025_bahrain_gp,1,George Russell,Mercedes,18,14:23:35,2.401,22.145
+2025_bahrain_gp,1,Lando Norris,McLaren,19,14:24:40,2.476,22.890
+2025_bahrain_gp,1,Charles Leclerc,Ferrari,20,14:25:45,2.501,23.112
+2025_bahrain_gp,1,Lewis Hamilton,Ferrari,21,14:26:50,2.412,22.345
+2025_bahrain_gp,1,Max Verstappen,Red Bull Racing,22,14:27:55,2.398,22.210
+2025_bahrain_gp,1,Pierre Gasly,Alpine,23,14:29:00,2.421,22.765
+2025_bahrain_gp,1,Esteban Ocon,Haas,24,14:30:05,2.389,21.998
+2025_bahrain_gp,1,Yuki Tsunoda,Racing Bulls,25,14:31:10,2.401,22.145
+2025_bahrain_gp,1,Oliver Bearman,Haas,26,14:32:15,2.387,21.876
+2025_bahrain_gp,1,Kimi Antonelli,Mercedes,27,14:33:20,2.476,22.890
+2025_bahrain_gp,1,Alexander Albon,Williams,28,14:34:25,2.501,23.112
+2025_bahrain_gp,1,Isack Hadjar,Racing Bulls,29,14:35:30,2.412,22.345
+2025_bahrain_gp,1,Jack Doohan,Alpine,30,14:36:35,2.398,22.210
+2025_bahrain_gp,1,Fernando Alonso,Aston Martin,31,14:37:40,2.421,22.765
+2025_bahrain_gp,1,Liam Lawson,Red Bull Racing,32,14:38:45,2.389,21.998
+2025_bahrain_gp,1,Lance Stroll,Aston Martin,33,14:39:50,2.401,22.145
+2025_bahrain_gp,1,Gabriel Bortoleto,Kick Sauber,34,14:40:55,2.387,21.876
+2025_bahrain_gp,1,Carlos Sainz,Williams,35,14:42:00,2.476,22.890
+2025_bahrain_gp,1,Nico Hulkenberg,Kick Sauber,36,14:43:05,2.501,23.112
+2025_saudi_arabian_gp,1,Oscar Piastri,McLaren,16,14:21:30,2.389,21.876
+2025_saudi_arabian_gp,1,Max Verstappen,Red Bull Racing,17,14:22:35,2.401,22.145
+2025_saudi_arabian_gp,1,Charles Leclerc,Ferrari,18,14:23:40,2.476,22.890
+2025_saudi_arabian_gp,1,Lando Norris,McLaren,19,14:24:45,2.501,23.112
+2025_saudi_arabian_gp,1,George Russell,Mercedes,20,14:25:50,2.412,22.345
+2025_saudi_arabian_gp,1,Kimi Antonelli,Mercedes,21,14:26:55,2.398,22.210
+2025_saudi_arabian_gp,1,Lewis Hamilton,Ferrari,22,14:28:00,2.421,22.765
+2025_saudi_arabian_gp,1,Carlos Sainz,Williams,23,14:29:05,2.389,21.998
+2025_saudi_arabian_gp,1,Alexander Albon,Williams,24,14:30:10,2.401,22.145
+2025_saudi_arabian_gp,1,Isack Hadjar,Racing Bulls,25,14:31:15,2.387,21.876
+2025_saudi_arabian_gp,1,Fernando Alonso,Aston Martin,26,14:32:20,2.476,22.890
+2025_saudi_arabian_gp,1,Liam Lawson,Red Bull Racing,27,14:33:25,2.501,23.112
+2025_saudi_arabian_gp,1,Oliver Bearman,Haas,28,14:34:30,2.412,22.345
+2025_saudi_arabian_gp,1,Esteban Ocon,Haas,29,14:35:35,2.398,22.210
+2025_saudi_arabian_gp,1,Nico Hulkenberg,Kick Sauber,30,14:36:40,2.421,22.765
+2025_saudi_arabian_gp,1,Lance Stroll,Aston Martin,31,14:37:45,2.389,21.998
+2025_saudi_arabian_gp,1,Jack Doohan,Alpine,32,14:38:50,2.401,22.145
+2025_saudi_arabian_gp,1,Gabriel Bortoleto,Kick Sauber,33,14:39:55,2.387,21.876
+2025_saudi_arabian_gp,1,Yuki Tsunoda,Racing Bulls,34,14:41:00,2.476,22.890
+2025_saudi_arabian_gp,1,Pierre Gasly,Alpine,35,14:42:05,2.501,23.112
+2025_miami_gp,1,Oscar Piastri,McLaren,18,14:23:00,2.412,22.345
+2025_miami_gp,1,Lando Norris,McLaren,19,14:24:05,2.398,22.210
+2025_miami_gp,1,George Russell,Mercedes,20,14:25:10,2.421,22.765
+2025_miami_gp,1,Max Verstappen,Red Bull Racing,21,14:26:15,2.389,21.998
+2025_miami_gp,1,Alexander Albon,Williams,22,14:27:20,2.401,22.145
+2025_miami_gp,1,Kimi Antonelli,Mercedes,23,14:28:25,2.387,21.876
+2025_miami_gp,1,Charles Leclerc,Ferrari,24,14:29:30,2.476,22.890
+2025_miami_gp,1,Lewis Hamilton,Ferrari,25,14:30:35,2.501,23.112
+2025_miami_gp,1,Carlos Sainz,Williams,26,14:31:40,2.412,22.345
+2025_miami_gp,1,Yuki Tsunoda,Racing Bulls,27,14:32:45,2.398,22.210
+2025_miami_gp,1,Isack Hadjar,Racing Bulls,28,14:33:50,2.421,22.765
+2025_miami_gp,1,Esteban Ocon,Haas,29,14:34:55,2.389,21.998
+2025_miami_gp,1,Pierre Gasly,Alpine,30,14:36:00,2.401,22.145
+2025_miami_gp,1,Nico Hulkenberg,Kick Sauber,31,14:37:05,2.387,21.876
+2025_miami_gp,1,Fernando Alonso,Aston Martin,32,14:38:10,2.476,22.890
+2025_miami_gp,1,Lance Stroll,Aston Martin,33,14:39:15,2.501,23.112
+2025_miami_gp,1,Liam Lawson,Red Bull Racing,34,14:40:20,2.412,22.345
+2025_miami_gp,1,Gabriel Bortoleto,Kick Sauber,35,14:41:25,2.398,22.210
+2025_miami_gp,1,Oliver Bearman,Haas,36,14:42:30,2.421,22.765
+2025_miami_gp,1,Jack Doohan,Alpine,36,14:43:35,2.398,22.210
+2025_emilia_romagna_gp,1,Oscar Piastri,McLaren,18,14:23:00,2.412,22.345
+2025_emilia_romagna_gp,1,Lando Norris,McLaren,19,14:24:05,2.398,22.210
+2025_emilia_romagna_gp,1,Max Verstappen,Red Bull Racing,20,14:25:10,2.421,22.765
+2025_emilia_romagna_gp,1,George Russell,Mercedes,21,14:26:15,2.389,21.998
+2025_emilia_romagna_gp,1,Charles Leclerc,Ferrari,22,14:27:20,2.401,22.145
+2025_emilia_romagna_gp,1,Lewis Hamilton,Ferrari,23,14:28:25,2.387,21.876
+2025_emilia_romagna_gp,1,Kimi Antonelli,Mercedes,24,14:29:30,2.476,22.890
+2025_emilia_romagna_gp,1,Alexander Albon,Williams,25,14:30:35,2.501,23.112
+2025_emilia_romagna_gp,1,Carlos Sainz,Williams,26,14:31:40,2.412,22.345
+2025_emilia_romagna_gp,1,Yuki Tsunoda,Racing Bulls,27,14:32:45,2.398,22.210
+2025_emilia_romagna_gp,1,Isack Hadjar,Racing Bulls,28,14:33:50,2.421,22.765
+2025_emilia_romagna_gp,1,Fernando Alonso,Aston Martin,29,14:34:55,2.389,21.998
+2025_emilia_romagna_gp,1,Lance Stroll,Aston Martin,30,14:36:00,2.401,22.145
+2025_emilia_romagna_gp,1,Jack Doohan,Alpine,31,14:37:05,2.387,21.876
+2025_emilia_romagna_gp,1,Pierre Gasly,Alpine,32,14:38:10,2.476,22.890
+2025_emilia_romagna_gp,1,Nico Hulkenberg,Kick Sauber,33,14:39:15,2.501,23.112
+2025_emilia_romagna_gp,1,Gabriel Bortoleto,Kick Sauber,34,14:40:20,2.412,22.345
+2025_emilia_romagna_gp,1,Liam Lawson,Red Bull Racing,35,14:41:25,2.398,22.210
+2025_emilia_romagna_gp,1,Esteban Ocon,Haas,36,14:42:30,2.421,22.765
+2025_emilia_romagna_gp,1,Oliver Bearman,Haas,37,14:43:35,2.389,21.998
+2025_monaco_gp,1,Oscar Piastri,McLaren,17,14:22:30,2.412,22.345
+2025_monaco_gp,1,Charles Leclerc,Ferrari,18,14:23:35,2.398,22.210
+2025_monaco_gp,1,Lando Norris,McLaren,19,14:24:40,2.421,22.765
+2025_monaco_gp,1,George Russell,Mercedes,20,14:25:45,2.389,21.998
+2025_monaco_gp,1,Max Verstappen,Red Bull Racing,21,14:26:50,2.401,22.145
+2025_monaco_gp,1,Lewis Hamilton,Ferrari,22,14:27:55,2.387,21.876
+2025_monaco_gp,1,Kimi Antonelli,Mercedes,23,14:29:00,2.476,22.890
+2025_monaco_gp,1,Alexander Albon,Williams,24,14:30:05,2.501,23.112
+2025_monaco_gp,1,Carlos Sainz,Williams,25,14:31:10,2.412,22.345
+2025_monaco_gp,1,Yuki Tsunoda,Racing Bulls,26,14:32:15,2.398,22.210
+2025_monaco_gp,1,Isack Hadjar,Racing Bulls,27,14:33:20,2.421,22.765
+2025_monaco_gp,1,Fernando Alonso,Aston Martin,28,14:34:25,2.389,21.998
+2025_monaco_gp,1,Lance Stroll,Aston Martin,29,14:35:30,2.401,22.145
+2025_monaco_gp,1,Jack Doohan,Alpine,30,14:36:35,2.387,21.876
+2025_monaco_gp,1,Pierre Gasly,Alpine,31,14:37:40,2.476,22.890
+2025_monaco_gp,1,Nico Hulkenberg,Kick Sauber,32,14:38:45,2.501,23.112
+2025_monaco_gp,1,Gabriel Bortoleto,Kick Sauber,33,14:39:50,2.412,22.345
+2025_monaco_gp,1,Liam Lawson,Red Bull Racing,34,14:40:55,2.398,22.210
+2025_monaco_gp,1,Esteban Ocon,Haas,35,14:42:00,2.421,22.765
+2025_monaco_gp,1,Oliver Bearman,Haas,36,14:43:05,2.389,21.998
+2025_spanish_gp,1,Oscar Piastri,McLaren,18,14:23:00,2.412,22.345
+2025_spanish_gp,1,Lando Norris,McLaren,19,14:24:05,2.398,22.210
+2025_spanish_gp,1,George Russell,Mercedes,20,14:25:10,2.421,22.765
+2025_spanish_gp,1,Max Verstappen,Red Bull Racing,21,14:26:15,2.389,21.998
+2025_spanish_gp,1,Charles Leclerc,Ferrari,22,14:27:20,2.401,22.145
+2025_spanish_gp,1,Lewis Hamilton,Ferrari,23,14:28:25,2.387,21.876
+2025_spanish_gp,1,Kimi Antonelli,Mercedes,24,14:29:30,2.476,22.890
+2025_spanish_gp,1,Alexander Albon,Williams,25,14:30:35,2.501,23.112
+2025_spanish_gp,1,Carlos Sainz,Williams,26,14:31:40,2.412,22.345
+2025_spanish_gp,1,Yuki Tsunoda,Racing Bulls,27,14:32:45,2.398,22.210
+2025_spanish_gp,1,Isack Hadjar,Racing Bulls,28,14:33:50,2.421,22.765
+2025_spanish_gp,1,Fernando Alonso,Aston Martin,29,14:34:55,2.389,21.998
+2025_spanish_gp,1,Lance Stroll,Aston Martin,30,14:36:00,2.401,22.145
+2025_spanish_gp,1,Jack Doohan,Alpine,31,14:37:05,2.387,21.876
+2025_spanish_gp,1,Pierre Gasly,Alpine,32,14:38:10,2.476,22.890
+2025_spanish_gp,1,Nico Hulkenberg,Kick Sauber,33,14:39:15,2.501,23.112
+2025_spanish_gp,1,Gabriel Bortoleto,Kick Sauber,34,14:40:20,2.412,22.345
+2025_spanish_gp,1,Liam Lawson,Red Bull Racing,35,14:41:25,2.398,22.210
+2025_spanish_gp,1,Esteban Ocon,Haas,36,14:42:30,2.421,22.765
+2025_spanish_gp,1,Oliver Bearman,Haas,37,14:43:35,2.389,21.998
+2025_great_britain_gp,1,Oscar Piastri,McLaren,18,14:23:00,2.412,22.345
+2025_great_britain_gp,1,Lando Norris,McLaren,19,14:24:05,2.398,22.210
+2025_great_britain_gp,1,George Russell,Mercedes,20,14:25:10,2.421,22.765
+2025_great_britain_gp,1,Max Verstappen,Red Bull Racing,21,14:26:15,2.389,21.998
+2025_great_britain_gp,1,Charles Leclerc,Ferrari,22,14:27:20,2.401,22.145
+2025_great_britain_gp,1,Lewis Hamilton,Ferrari,23,14:28:25,2.387,21.876
+2025_great_britain_gp,1,Kimi Antonelli,Mercedes,24,14:29:30,2.476,22.890
+2025_great_britain_gp,1,Alexander Albon,Williams,25,14:30:35,2.501,23.112
+2025_great_britain_gp,1,Carlos Sainz,Williams,26,14:31:40,2.412,22.345
+2025_great_britain_gp,1,Yuki Tsunoda,Racing Bulls,27,14:32:45,2.398,22.210
+2025_great_britain_gp,1,Isack Hadjar,Racing Bulls,28,14:33:50,2.421,22.765
+2025_great_britain_gp,1,Fernando Alonso,Aston Martin,29,14:34:55,2.389,21.998
+2025_great_britain_gp,1,Lance Stroll,Aston Martin,30,14:36:00,2.401,22.145
+2025_great_britain_gp,1,Jack Doohan,Alpine,31,14:37:05,2.387,21.876
+2025_great_britain_gp,1,Pierre Gasly,Alpine,32,14:38:10,2.476,22.890
+2025_great_britain_gp,1,Nico Hulkenberg,Kick Sauber,33,14:39:15,2.501,23.112
+2025_great_britain_gp,1,Gabriel Bortoleto,Kick Sauber,34,14:40:20,2.412,22.345
+2025_great_britain_gp,1,Liam Lawson,Red Bull Racing,35,14:41:25,2.398,22.210
+2025_great_britain_gp,1,Esteban Ocon,Haas,36,14:42:30,2.421,22.765
+2025_great_britain_gp,1,Oliver Bearman,Haas,37,14:43:35,2.389,21.998
+2025_austria_gp,1,Oscar Piastri,McLaren,17,14:22:30,2.412,22.345
+2025_austria_gp,1,Lando Norris,McLaren,18,14:23:35,2.398,22.210
+2025_austria_gp,1,George Russell,Mercedes,19,14:24:40,2.421,22.765
+2025_austria_gp,1,Max Verstappen,Red Bull Racing,20,14:25:45,2.389,21.998
+2025_austria_gp,1,Charles Leclerc,Ferrari,21,14:26:50,2.401,22.145
+2025_austria_gp,1,Lewis Hamilton,Ferrari,22,14:27:55,2.387,21.876
+2025_austria_gp,1,Kimi Antonelli,Mercedes,23,14:29:00,2.476,22.890
+2025_austria_gp,1,Alexander Albon,Williams,24,14:30:05,2.501,23.112
+2025_austria_gp,1,Carlos Sainz,Williams,25,14:31:10,2.412,22.345
+2025_austria_gp,1,Yuki Tsunoda,Racing Bulls,26,14:32:15,2.398,22.210
+2025_austria_gp,1,Isack Hadjar,Racing Bulls,27,14:33:20,2.421,22.765
+2025_austria_gp,1,Fernando Alonso,Aston Martin,28,14:34:25,2.389,21.998
+2025_austria_gp,1,Lance Stroll,Aston Martin,29,14:35:30,2.401,22.145
+2025_austria_gp,1,Jack Doohan,Alpine,30,14:36:35,2.387,21.876
+2025_austria_gp,1,Pierre Gasly,Alpine,31,14:37:40,2.476,22.890
+2025_austria_gp,1,Nico Hulkenberg,Kick Sauber,32,14:38:45,2.501,23.112
+2025_austria_gp,1,Gabriel Bortoleto,Kick Sauber,33,14:39:50,2.412,22.345
+2025_austria_gp,1,Liam Lawson,Red Bull Racing,34,14:40:55,2.398,22.210
+2025_austria_gp,1,Esteban Ocon,Haas,35,14:42:00,2.421,22.765
+2025_austria_gp,1,Oliver Bearman,Haas,36,14:43:05,2.389,21.998
+2025_hungarian_gp,1,Oscar Piastri,McLaren,18,14:23:00,2.412,22.345
+2025_hungarian_gp,1,Lando Norris,McLaren,19,14:24:05,2.398,22.210
+2025_hungarian_gp,1,George Russell,Mercedes,20,14:25:10,2.421,22.765
+2025_hungarian_gp,1,Max Verstappen,Red Bull Racing,21,14:26:15,2.389,21.998
+2025_hungarian_gp,1,Charles Leclerc,Ferrari,22,14:27:20,2.401,22.145
+2025_hungarian_gp,1,Lewis Hamilton,Ferrari,23,14:28:25,2.387,21.876
+2025_hungarian_gp,1,Kimi Antonelli,Mercedes,24,14:29:30,2.476,22.890
+2025_hungarian_gp,1,Alexander Albon,Williams,25,14:30:35,2.501,23.112
+2025_hungarian_gp,1,Carlos Sainz,Williams,26,14:31:40,2.412,22.345
+2025_hungarian_gp,1,Yuki Tsunoda,Racing Bulls,27,14:32:45,2.398,22.210
+2025_hungarian_gp,1,Isack Hadjar,Racing Bulls,28,14:33:50,2.421,22.765
+2025_hungarian_gp,1,Fernando Alonso,Aston Martin,29,14:34:55,2.389,21.998
+2025_hungarian_gp,1,Lance Stroll,Aston Martin,30,14:36:00,2.401,22.145
+2025_hungarian_gp,1,Jack Doohan,Alpine,31,14:37:05,2.387,21.876
+2025_hungarian_gp,1,Pierre Gasly,Alpine,32,14:38:10,2.476,22.890
+2025_hungarian_gp,1,Nico Hulkenberg,Kick Sauber,33,14:39:15,2.501,23.112
+2025_hungarian_gp,1,Gabriel Bortoleto,Kick Sauber,34,14:40:20,2.412,22.345
+2025_hungarian_gp,1,Liam Lawson,Red Bull Racing,35,14:41:25,2.398,22.210
+2025_hungarian_gp,1,Esteban Ocon,Haas,36,14:42:30,2.421,22.765
+2025_hungarian_gp,1,Oliver Bearman,Haas,37,14:43:35,2.389,21.998

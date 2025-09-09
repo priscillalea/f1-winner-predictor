@@ -1,0 +1,302 @@
+race_id,pos,driver,team,time,pts,driver_total_gps
+2025_australian_gp,1,L. Norris,McLaren,1:42:06.304,25,144
+2025_australian_gp,2,M. Verstappen,Red Bull,+0.895s,18,224
+2025_australian_gp,3,G. Russell,Mercedes,+8.481s,15,144
+2025_australian_gp,4,A.K. Antonelli,Mercedes,+10.135s,12,13
+2025_australian_gp,5,A. Albon,Williams,+12.773s,10,120
+2025_australian_gp,6,L. Stroll,Aston Martin,+17.413s,8,181
+2025_australian_gp,7,N. Hülkenberg,Kick Sauber,+18.423s,6,243
+2025_australian_gp,8,C. Leclerc,Ferrari,+19.826s,4,162
+2025_australian_gp,9,O. Piastri,McLaren,+20.448s,2,62
+2025_australian_gp,10,L. Hamilton,Ferrari,+22.473s,1,371
+2025_australian_gp,11,P. Gasly,Alpine,+26.502s,0,169
+2025_australian_gp,12,Y. Tsunoda,Red Bull,+29.884s,0,103
+2025_australian_gp,13,E. Ocon,Haas,+33.161s,0,158
+2025_australian_gp,14,O. Bearman,Haas,+40.351s,0,18
+2025_australian_gp,15,L. Lawson,Red Bull,DNF,0,26
+2025_australian_gp,16,G. Bortoleto,Kick Sauber,DNF,0,16
+2025_australian_gp,17,F. Alonso,Aston Martin,DNF,0,409
+2025_australian_gp,18,C. Sainz Jr.,Williams,DNF,0,221
+2025_australian_gp,19,J. Doohan,Alpine,DNF,0,0
+2025_australian_gp,20,I. Hadjar,Red Bull,DNF,0,15
+2025_chinese_gp,1,O. Piastri,McLaren,1:30:55.026,25,62
+2025_chinese_gp,2,L. Norris,McLaren,+9.748s,18,144
+2025_chinese_gp,3,G. Russell,Mercedes,+11.097s,15,144
+2025_chinese_gp,4,M. Verstappen,Red Bull,+16.656s,12,224
+2025_chinese_gp,5,C. Leclerc,Ferrari,+56 Laps,0,162
+2025_chinese_gp,6,L. Hamilton,Ferrari,+56 Laps,0,371
+2025_chinese_gp,7,E. Ocon,Haas,+49.969s,10,158
+2025_chinese_gp,8,A.K. Antonelli,Mercedes,+53.748s,8,13
+2025_chinese_gp,9,A. Albon,Williams,+56.321s,6,120
+2025_chinese_gp,10,O. Bearman,Haas,+61.303s,4,18
+2025_chinese_gp,11,P. Gasly,Alpine,+56 Laps,0,169
+2025_chinese_gp,12,L. Stroll,Aston Martin,+70.204s,2,181
+2025_chinese_gp,13,C. Sainz Jr.,Williams,+76.387s,1,221
+2025_chinese_gp,14,I. Hadjar,Red Bull,+78.875s,0,15
+2025_chinese_gp,15,J. Doohan,Alpine,+88.401s,0,0
+2025_chinese_gp,16,L. Lawson,Red Bull,+81.147s,0,26
+2025_chinese_gp,17,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_chinese_gp,18,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_chinese_gp,19,Y. Tsunoda,Red Bull,+1 Lap,0,103
+2025_chinese_gp,20,F. Alonso,Aston Martin,DNF,0,409
+2025_japanese_gp,1,M. Verstappen,Red Bull,1:22:06.983,25,224
+2025_japanese_gp,2,L. Norris,McLaren,+1.423s,18,144
+2025_japanese_gp,3,O. Piastri,McLaren,+2.129s,15,62
+2025_japanese_gp,4,C. Leclerc,Ferrari,+16.097s,12,162
+2025_japanese_gp,5,G. Russell,Mercedes,+17.362s,10,144
+2025_japanese_gp,6,A.K. Antonelli,Mercedes,+18.671s,8,13
+2025_japanese_gp,7,L. Hamilton,Ferrari,+29.182s,6,371
+2025_japanese_gp,8,I. Hadjar,Red Bull,+37.134s,4,15
+2025_japanese_gp,9,A. Albon,Williams,+40.367s,2,120
+2025_japanese_gp,10,O. Bearman,Haas,+54.529s,1,18
+2025_japanese_gp,11,F. Alonso,Aston Martin,+57.333s,0,409
+2025_japanese_gp,12,Y. Tsunoda,Red Bull,+58.401s,0,103
+2025_japanese_gp,13,P. Gasly,Alpine,+62.122s,0,169
+2025_japanese_gp,14,C. Sainz Jr.,Williams,+74.129s,0,221
+2025_japanese_gp,15,J. Doohan,Alpine,+81.314s,0,0
+2025_japanese_gp,16,N. Hülkenberg,Kick Sauber,+81.957s,0,243
+2025_japanese_gp,17,L. Lawson,Red Bull,+82.734s,0,26
+2025_japanese_gp,18,E. Ocon,Haas,+83.438s,0,158
+2025_japanese_gp,19,G. Bortoleto,Kick Sauber,+83.897s,0,16
+2025_japanese_gp,20,L. Stroll,Aston Martin,+1 Lap,0,181
+2025_bahrain_gp,1,O. Piastri,McLaren,1:35:39.435,25,62
+2025_bahrain_gp,2,G. Russell,Mercedes,+15.499s,18,144
+2025_bahrain_gp,3,L. Norris,McLaren,+16.273s,15,144
+2025_bahrain_gp,4,C. Leclerc,Ferrari,+19.679s,12,162
+2025_bahrain_gp,5,L. Hamilton,Ferrari,+27.993s,10,371
+2025_bahrain_gp,6,M. Verstappen,Red Bull,+34.395s,8,224
+2025_bahrain_gp,7,P. Gasly,Alpine,+36.002s,6,169
+2025_bahrain_gp,8,E. Ocon,Haas,+44.244s,4,158
+2025_bahrain_gp,9,Y. Tsunoda,Red Bull,+45.061s,2,103
+2025_bahrain_gp,10,O. Bearman,Haas,+47.594s,1,18
+2025_bahrain_gp,11,A.K. Antonelli,Mercedes,+48.016s,0,13
+2025_bahrain_gp,12,A. Albon,Williams,+48.839s,0,120
+2025_bahrain_gp,13,I. Hadjar,Red Bull,+56.314s,0,15
+2025_bahrain_gp,14,J. Doohan,Alpine,+57.806s,0,0
+2025_bahrain_gp,15,F. Alonso,Aston Martin,+60.340s,0,409
+2025_bahrain_gp,16,L. Lawson,Red Bull,+64.435s,0,26
+2025_bahrain_gp,17,L. Stroll,Aston Martin,+65.489s,0,181
+2025_bahrain_gp,18,G. Bortoleto,Kick Sauber,+66.872s,0,16
+2025_bahrain_gp,19,C. Sainz Jr.,Williams,DNF,0,221
+2025_bahrain_gp,20,N. Hülkenberg,Kick Sauber,DNF,0,243
+2025_saudi_arabian_gp,1,O. Piastri,McLaren,1:21:06.758,25,62
+2025_saudi_arabian_gp,2,M. Verstappen,Red Bull,+2.843s,18,224
+2025_saudi_arabian_gp,3,C. Leclerc,Ferrari,+8.104s,15,162
+2025_saudi_arabian_gp,4,L. Norris,McLaren,+9.196s,12,144
+2025_saudi_arabian_gp,5,G. Russell,Mercedes,+27.236s,10,144
+2025_saudi_arabian_gp,6,A.K. Antonelli,Mercedes,+34.688s,8,13
+2025_saudi_arabian_gp,7,L. Hamilton,Ferrari,+39.073s,6,371
+2025_saudi_arabian_gp,8,C. Sainz Jr.,Williams,+64.630s,4,221
+2025_saudi_arabian_gp,9,A. Albon,Williams,+66.515s,2,120
+2025_saudi_arabian_gp,10,I. Hadjar,Red Bull,+67.091s,1,15
+2025_saudi_arabian_gp,11,F. Alonso,Aston Martin,+75.917s,0,409
+2025_saudi_arabian_gp,12,L. Lawson,Red Bull,+78.451s,0,26
+2025_saudi_arabian_gp,13,O. Bearman,Haas,+79.194s,0,18
+2025_saudi_arabian_gp,14,E. Ocon,Haas,+99.723s,0,158
+2025_saudi_arabian_gp,15,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_saudi_arabian_gp,16,L. Stroll,Aston Martin,+1 Lap,0,181
+2025_saudi_arabian_gp,17,J. Doohan,Alpine,+1 Lap,0,0
+2025_saudi_arabian_gp,18,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_saudi_arabian_gp,19,Y. Tsunoda,Red Bull,DNF,0,103
+2025_saudi_arabian_gp,20,P. Gasly,Alpine,DNF,0,169
+2025_miami_gp,1,O. Piastri,McLaren,1:28:51.587,25,62
+2025_miami_gp,2,L. Norris,McLaren,+4.630s,18,144
+2025_miami_gp,3,G. Russell,Mercedes,+37.644s,15,144
+2025_miami_gp,4,M. Verstappen,Red Bull,+39.956s,12,224
+2025_miami_gp,5,A. Albon,Williams,+48.067s,10,120
+2025_miami_gp,6,A.K. Antonelli,Mercedes,+55.502s,8,13
+2025_miami_gp,7,C. Leclerc,Ferrari,+57.036s,6,162
+2025_miami_gp,8,L. Hamilton,Ferrari,+60.186s,4,371
+2025_miami_gp,9,C. Sainz Jr.,Williams,+60.577s,2,221
+2025_miami_gp,10,Y. Tsunoda,Red Bull,+74.434s,1,103
+2025_miami_gp,11,I. Hadjar,Red Bull,+74.602s,0,15
+2025_miami_gp,12,E. Ocon,Haas,+82.006s,0,158
+2025_miami_gp,13,P. Gasly,Alpine,+90.445s,0,169
+2025_miami_gp,14,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_miami_gp,15,F. Alonso,Aston Martin,+1 Lap,0,409
+2025_miami_gp,16,L. Stroll,Aston Martin,+1 Lap,0,181
+2025_miami_gp,17,L. Lawson,Red Bull,DNF,0,26
+2025_miami_gp,18,G. Bortoleto,Kick Sauber,DNF,0,16
+2025_miami_gp,19,O. Bearman,Haas,DNF,0,18
+2025_miami_gp,20,J. Doohan,Alpine,DNF,0,0
+2025_emilia_romagna_gp,1,O. Piastri,McLaren,1:34:27.189,25,62
+2025_emilia_romagna_gp,2,L. Norris,McLaren,+5.432s,18,144
+2025_emilia_romagna_gp,3,M. Verstappen,Red Bull,+12.856s,15,224
+2025_emilia_romagna_gp,4,G. Russell,Mercedes,+16.027s,12,144
+2025_emilia_romagna_gp,5,C. Leclerc,Ferrari,+20.345s,10,162
+2025_emilia_romagna_gp,6,L. Hamilton,Ferrari,+28.974s,8,371
+2025_emilia_romagna_gp,7,A.K. Antonelli,Mercedes,+35.462s,6,13
+2025_emilia_romagna_gp,8,A. Albon,Williams,+40.291s,4,120
+2025_emilia_romagna_gp,9,C. Sainz Jr.,Williams,+41.083s,2,221
+2025_emilia_romagna_gp,10,Y. Tsunoda,Red Bull,+43.616s,1,103
+2025_emilia_romagna_gp,11,I. Hadjar,Red Bull,+44.238s,0,15
+2025_emilia_romagna_gp,12,E. Ocon,Haas,+52.430s,0,158
+2025_emilia_romagna_gp,13,P. Gasly,Alpine,+53.927s,0,169
+2025_emilia_romagna_gp,14,L. Lawson,Red Bull,+55.318s,0,26
+2025_emilia_romagna_gp,15,F. Alonso,Aston Martin,+58.432s,0,409
+2025_emilia_romagna_gp,16,L. Stroll,Aston Martin,+59.874s,0,181
+2025_emilia_romagna_gp,17,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_emilia_romagna_gp,18,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_emilia_romagna_gp,19,O. Bearman,Haas,DNF,0,18
+2025_emilia_romagna_gp,20,J. Doohan,Alpine,DNF,0,0
+2025_monaco_gp,1,O. Piastri,McLaren,1:47:03.221,25,62
+2025_monaco_gp,2,C. Leclerc,Ferrari,+1.945s,18,162
+2025_monaco_gp,3,L. Norris,McLaren,+3.882s,15,144
+2025_monaco_gp,4,G. Russell,Mercedes,+8.124s,12,144
+2025_monaco_gp,5,M. Verstappen,Red Bull,+9.673s,10,224
+2025_monaco_gp,6,L. Hamilton,Ferrari,+11.827s,8,371
+2025_monaco_gp,7,A.K. Antonelli,Mercedes,+17.502s,6,13
+2025_monaco_gp,8,A. Albon,Williams,+22.794s,4,120
+2025_monaco_gp,9,C. Sainz Jr.,Williams,+25.081s,2,221
+2025_monaco_gp,10,Y. Tsunoda,Red Bull,+28.439s,1,103
+2025_monaco_gp,11,I. Hadjar,Red Bull,+30.126s,0,15
+2025_monaco_gp,12,E. Ocon,Haas,+36.942s,0,158
+2025_monaco_gp,13,P. Gasly,Alpine,+38.411s,0,169
+2025_monaco_gp,14,L. Lawson,Red Bull,+39.882s,0,26
+2025_monaco_gp,15,F. Alonso,Aston Martin,+42.331s,0,409
+2025_monaco_gp,16,L. Stroll,Aston Martin,+44.019s,0,181
+2025_monaco_gp,17,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_monaco_gp,18,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_monaco_gp,19,O. Bearman,Haas,DNF,0,18
+2025_monaco_gp,20,J. Doohan,Alpine,DNF,0,0
+2025_spanish_gp,1,O. Piastri,McLaren,1:32:48.554,25,62
+2025_spanish_gp,2,L. Norris,McLaren,+2.947s,18,144
+2025_spanish_gp,3,G. Russell,Mercedes,+8.155s,15,144
+2025_spanish_gp,4,M. Verstappen,Red Bull,+10.472s,12,224
+2025_spanish_gp,5,C. Leclerc,Ferrari,+12.034s,10,162
+2025_spanish_gp,6,L. Hamilton,Ferrari,+18.619s,8,371
+2025_spanish_gp,7,A.K. Antonelli,Mercedes,+25.008s,6,13
+2025_spanish_gp,8,A. Albon,Williams,+30.573s,4,120
+2025_spanish_gp,9,C. Sainz Jr.,Williams,+33.017s,2,221
+2025_spanish_gp,10,Y. Tsunoda,Red Bull,+35.489s,1,103
+2025_spanish_gp,11,I. Hadjar,Red Bull,+36.794s,0,15
+2025_spanish_gp,12,E. Ocon,Haas,+42.519s,0,158
+2025_spanish_gp,13,P. Gasly,Alpine,+44.131s,0,169
+2025_spanish_gp,14,L. Lawson,Red Bull,+45.963s,0,26
+2025_spanish_gp,15,F. Alonso,Aston Martin,+50.202s,0,409
+2025_spanish_gp,16,L. Stroll,Aston Martin,+51.446s,0,181
+2025_spanish_gp,17,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_spanish_gp,18,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_spanish_gp,19,O. Bearman,Haas,DNF,0,18
+2025_spanish_gp,20,J. Doohan,Alpine,DNF,0,0
+2025_canadian_gp,1,G. Russell,Mercedes,1:31:52.688,25,144
+2025_canadian_gp,2,M. Verstappen,Red Bull,+0.228s,18,224
+2025_canadian_gp,3,A.K. Antonelli,Mercedes,+1.014s,15,13
+2025_canadian_gp,4,O. Piastri,McLaren,+2.109s,12,62
+2025_canadian_gp,5,C. Leclerc,Ferrari,+3.442s,10,162
+2025_canadian_gp,6,L. Hamilton,Ferrari,+10.713s,8,371
+2025_canadian_gp,7,F. Alonso,Aston Martin,+10.972s,6,409
+2025_canadian_gp,8,N. Hülkenberg,Kick Sauber,+15.364s,4,243
+2025_canadian_gp,9,E. Ocon,Haas,+1 Lap,2,158
+2025_canadian_gp,10,C. Sainz Jr.,Williams,+1 Lap,1,221
+2025_canadian_gp,11,O. Bearman,Haas,+1 Lap,0,18
+2025_canadian_gp,12,Y. Tsunoda,Red Bull,+1 Lap,0,103
+2025_canadian_gp,13,F. Colapinto,Alpine,+1 Lap,0,0
+2025_canadian_gp,14,G. Bortoleto,Kick Sauber,+1 Lap,0,16
+2025_canadian_gp,15,P. Gasly,Alpine,+1 Lap,0,169
+2025_canadian_gp,16,I. Hadjar,Red Bull,+1 Lap,0,15
+2025_canadian_gp,17,L. Stroll,Aston Martin,+1 Lap,0,181
+2025_canadian_gp,18,L. Norris,McLaren,DNF,0,144
+2025_canadian_gp,19,L. Lawson,Red Bull,DNF,0,26
+2025_canadian_gp,20,A. Albon,Williams,DNF,0,120
+2025_austrian_gp,1,L. Norris,McLaren,1:23:47.693,25,144
+2025_austrian_gp,2,O. Piastri,McLaren,+2.695s,18,62
+2025_austrian_gp,3,C. Leclerc,Ferrari,+19.820s,15,162
+2025_austrian_gp,4,L. Hamilton,Ferrari,+29.020s,12,371
+2025_austrian_gp,5,G. Russell,Mercedes,+62.396s,10,144
+2025_austrian_gp,6,L. Lawson,Red Bull,+67.754s,8,26
+2025_austrian_gp,7,F. Alonso,Aston Martin,+1 Lap,6,409
+2025_austrian_gp,8,G. Bortoleto,Kick Sauber,+1 Lap,4,16
+2025_austrian_gp,9,N. Hülkenberg,Kick Sauber,+1 Lap,2,243
+2025_austrian_gp,10,E. Ocon,Haas,+1 Lap,1,158
+2025_austrian_gp,11,O. Bearman,Haas,+1 Lap,0,18
+2025_austrian_gp,12,I. Hadjar,Red Bull,+1 Lap,0,15
+2025_austrian_gp,13,P. Gasly,Alpine,+1 Lap,0,169
+2025_austrian_gp,14,L. Stroll,Aston Martin,+1 Lap,0,181
+2025_austrian_gp,15,F. Colapinto,Alpine,+1 Lap,0,0
+2025_austrian_gp,16,Y. Tsunoda,Red Bull,+2 Laps,0,103
+2025_austrian_gp,17,A. Albon,Williams,DNF,0,120
+2025_austrian_gp,18,M. Verstappen,Red Bull,DNF,0,224
+2025_austrian_gp,19,A.K. Antonelli,Mercedes,DNF,0,13
+2025_austrian_gp,20,C. Sainz Jr.,Williams,DNF,0,221
+2025_british_gp,1,L. Norris,McLaren,1:37:15.735,25,144
+2025_british_gp,2,O. Piastri,McLaren,+6.812s,18,62
+2025_british_gp,3,N. Hülkenberg,Kick Sauber,+34.742s,15,243
+2025_british_gp,4,L. Hamilton,Ferrari,+39.812s,12,371
+2025_british_gp,5,M. Verstappen,Red Bull,+56.781s,10,224
+2025_british_gp,6,P. Gasly,Alpine,+59.857s,8,169
+2025_british_gp,7,L. Stroll,Aston Martin,+60.603s,6,181
+2025_british_gp,8,A. Albon,Williams,+64.135s,4,120
+2025_british_gp,9,F. Alonso,Aston Martin,+65.858s,2,409
+2025_british_gp,10,G. Russell,Mercedes,+70.674s,1,144
+2025_british_gp,11,O. Bearman,Haas,+72.095s,0,18
+2025_british_gp,12,C. Sainz Jr.,Williams,+76.592s,0,221
+2025_british_gp,13,E. Ocon,Haas,+77.301s,0,158
+2025_british_gp,14,C. Leclerc,Ferrari,+84.477s,0,162
+2025_british_gp,15,Y. Tsunoda,Red Bull,+1 Lap,0,103
+2025_british_gp,16,A.K. Antonelli,Mercedes,DNF,0,13
+2025_british_gp,17,I. Hadjar,Red Bull,DNF,0,15
+2025_british_gp,18,G. Bortoleto,Kick Sauber,DNF,0,16
+2025_british_gp,19,L. Lawson,Red Bull,DNF,0,26
+2025_british_gp,20,F. Colapinto,Alpine,DNF,0,0
+2025_belgian_gp,1,O. Piastri,McLaren,1:25:22.601,25,62
+2025_belgian_gp,2,L. Norris,McLaren,+3.415s,18,144
+2025_belgian_gp,3,C. Leclerc,Ferrari,+20.185s,15,162
+2025_belgian_gp,4,M. Verstappen,Red Bull,+21.731s,12,224
+2025_belgian_gp,5,G. Russell,Mercedes,+34.863s,10,144
+2025_belgian_gp,6,A. Albon,Williams,+39.926s,8,120
+2025_belgian_gp,7,L. Hamilton,Ferrari,+40.679s,6,371
+2025_belgian_gp,8,L. Lawson,Red Bull,+52.033s,4,26
+2025_belgian_gp,9,G. Bortoleto,Kick Sauber,+56.434s,2,16
+2025_belgian_gp,10,P. Gasly,Alpine,+72.714s,1,169
+2025_belgian_gp,11,O. Bearman,Haas,+73.145s,0,18
+2025_belgian_gp,12,N. Hülkenberg,Kick Sauber,+73.628s,0,243
+2025_belgian_gp,13,Y. Tsunoda,Red Bull,+75.395s,0,103
+2025_belgian_gp,14,L. Stroll,Aston Martin,+79.831s,0,181
+2025_belgian_gp,15,E. Ocon,Haas,+86.063s,0,158
+2025_belgian_gp,16,A.K. Antonelli,Mercedes,+86.721s,0,13
+2025_belgian_gp,17,F. Alonso,Aston Martin,+87.924s,0,409
+2025_belgian_gp,18,C. Sainz Jr.,Williams,+92.024s,0,221
+2025_belgian_gp,19,F. Colapinto,Alpine,+95.250s,0,0
+2025_belgian_gp,20,I. Hadjar,Red Bull,+1 Lap,0,15
+2025_hungarian_gp,1,L. Norris,McLaren,1:35:21.231,25,144
+2025_hungarian_gp,2,O. Piastri,McLaren,+0.698s,18,62
+2025_hungarian_gp,3,G. Russell,Mercedes,+21.916s,15,144
+2025_hungarian_gp,4,C. Leclerc,Ferrari,+42.560s,12,162
+2025_hungarian_gp,5,F. Alonso,Aston Martin,+59.040s,10,409
+2025_hungarian_gp,6,G. Bortoleto,Kick Sauber,+66.169s,8,16
+2025_hungarian_gp,7,L. Stroll,Aston Martin,+68.174s,6,181
+2025_hungarian_gp,8,L. Lawson,Red Bull,+69.451s,4,26
+2025_hungarian_gp,9,M. Verstappen,Red Bull,+72.645s,2,224
+2025_hungarian_gp,10,A.K. Antonelli,Mercedes,+1 Lap,1,13
+2025_hungarian_gp,11,I. Hadjar,Red Bull,+1 Lap,0,15
+2025_hungarian_gp,12,L. Hamilton,Ferrari,+1 Lap,0,371
+2025_hungarian_gp,13,N. Hülkenberg,Kick Sauber,+1 Lap,0,243
+2025_hungarian_gp,14,C. Sainz Jr.,Williams,+1 Lap,0,221
+2025_hungarian_gp,15,A. Albon,Williams,+1 Lap,0,120
+2025_hungarian_gp,16,E. Ocon,Haas,+1 Lap,0,158
+2025_hungarian_gp,17,Y. Tsunoda,Red Bull,+1 Lap,0,103
+2025_hungarian_gp,18,F. Colapinto,Alpine,+1 Lap,0,0
+2025_hungarian_gp,19,P. Gasly,Alpine,+1 Lap,0,169
+2025_hungarian_gp,20,O. Bearman,Haas,DNF,0,18
+2025_dutch_gp,1,,,,,
+2025_dutch_gp,2,,,,,
+2025_dutch_gp,3,,,,,
+2025_dutch_gp,4,,,,,
+2025_dutch_gp,5,,,,,
+2025_dutch_gp,6,,,,,
+2025_dutch_gp,7,,,,,
+2025_dutch_gp,8,,,,,
+2025_dutch_gp,9,,,,,
+2025_dutch_gp,10,,,,,
+2025_dutch_gp,11,,,,,
+2025_dutch_gp,12,,,,,
+2025_dutch_gp,13,,,,,
+2025_dutch_gp,14,,,,,
+2025_dutch_gp,15,,,,,
+2025_dutch_gp,16,,,,,
+2025_dutch_gp,17,,,,,
+2025_dutch_gp,18,,,,,
+2025_dutch_gp,19,,,,,
+2025_dutch_gp,20,,,,,
+
