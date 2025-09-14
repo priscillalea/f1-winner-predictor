@@ -1,6 +1,6 @@
 F1 2025 Performance Analysis
 <!-- Hero Image / Capa -->
-![F1 Performance Analysis]([plots/f1_cover.png](https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg))
+![F1 Performance Analysis](https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg)
 A data analysis of Formula 1 in the year 2025, focusing on pit stops, qualifying, and race results. This project visualizes patterns, highlights top teams and drivers, and prepares the foundation for a future machine learning prediction of race winners. This project will be updated in the near future.
 
 Table of Contents
