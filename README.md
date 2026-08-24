@@ -1,194 +1,79 @@
-# **F1 2025 Performance Analysis**
+# **F1 2025 Championship Predictor & Data Analysis**
 
-<!-- Hero Image / Capa -->
+<!-- Hero Image -->
 ![F1 Performance Analysis](https://images.pexels.com/photos/29406740/pexels-photo-29406740.jpeg)
 
-A data analysis of Formula 1 in the year 2025, focusing on pit stops, qualifying, and race results. This project visualizes patterns, highlights top teams and drivers, and prepares the foundation for a future machine learning prediction of race winners. This project will be updated in the near future.
+Welcome to the **F1 2025 Championship Predictor**! This project is a data analysis focused on the 2025 Formula 1 season. The goal is not just to understand what happened, but to predict what could happen using the official **FastF1** library.
+
+All the work lives inside a single Jupyter Notebook, designed to act as the complete brain of the project: data extraction from the Formula 1 API, cleaning, feature engineering, machine learning training, and championship simulation.
 
 ---
 
 ## **Table of Contents**
 
-- [Motivation & Story](#motivation--story)
-- [What This Project Does](#what-this-project-does)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Data Source](#data-source)
-- [Results & Visualizations](#results--visualizations)
-- [Roadmap](#roadmap)
-- [How This Fits My Learning Path](#how-this-fits-my-learning-path)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Data Extraction (FastF1)](#data-extraction-fastf1)
+- [Machine Learning Methodology](#machine-learning-methodology)
+- [Championship Simulation](#championship-simulation)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
 
 ---
 
-## **Motivation & Story**
+## **Overview**
 
-I’m a passionate F1 fan and a Data Science student. I love analyzing data, identifying patterns, and telling stories through numbers. Watching the 2025 season, I wondered:
+The system uses the Python `fastf1` library to pull data directly from Formula 1's servers — race results, points, grid positions, and the full 2025 calendar. From there, the notebook trains a model to estimate driver performance and projects the championship outcome.
 
-- Who is the fastest team in pit stops?
-- Who excels in qualifying sessions?
-- Who is actually winning races, especially in a competitive year with drivers like Oscar Piastri and Lando Norris?
+## **Architecture**
+- **Jupyter Notebook (`notebooks/f1_2025_predictor.ipynb`)**: All the logic lives here.
+- **Local Cache (`data/cache/`)**: Stores FastF1 responses so subsequent runs require no network access.
+- **Fallback Data (`data/historical/`)**: Historical CSV files used as a backup if the API is unavailable.
 
-As a Red Bull Racing fan, I was shocked to see Max Verstappen only won 2 races so far 😅. But this analysis helped me organize thoughts and explore trends in a structured way, reinforcing the belief I have in data as a fundamental aspect in everyday life and projects.
+## **Data Extraction (FastF1)**
 
-This is my third project, after a **K-Drama Recommender** and a **Spam Detector**.
+`fastf1` is the industry standard for F1 telemetry and timing analysis in Python. It provides access to:
+* `get_event_schedule(2025)`: The official season calendar.
+* `get_session()`: Precise race session data (official results, lap times).
 
----
+## **Machine Learning Methodology**
 
-## **What This Project Does**
+The problem is framed as **finish position regression** — rather than a binary "who wins" classification, we use a **Random Forest Regressor** (also compared against XGBoost) to predict each driver's exact finishing position, based on their historical rolling form and starting grid position.
 
-- Collects and cleans F1 2025 data (manually scraped from [Formula1.com](https://www.formula1.com/en/results/2025/races)).
-- Normalizes team names and colors for consistent visualization.
-- Computes and visualizes:
-  - Average pit stop times per team
-  - Pole positions per driver
-  - Race wins per driver
-- Generates clear, horizontal bar charts for each metric.
-- Prepares the groundwork for future ML models to predict race winners.
+A **temporal split** is used for validation: earlier rounds train the model, later rounds test it. This mirrors real-world prediction and prevents data leakage.
 
----
+## **Championship Simulation**
 
-## **Project Structure**
-
-f1-winner-predictor/
-├─ f1.ipynb # Main analysis notebook
-├─ csv/
-│ ├─ pitstop.csv
-│ ├─ qualifying.csv
-│ └─ raceresult.csv
-├─ plots/ # Saved PNG and SVG charts
-└─ README.md
-
-yaml
-Copy code
-
-**Tech Stack:** Python, Pandas, NumPy, Matplotlib, IPython display.
+The model provides each driver's expected base performance. To capture the natural unpredictability of F1 (engine failures, collisions, strategy calls), the notebook runs thousands of Abu Dhabi simulations with probabilistic noise around the model's predictions. The result is a probability distribution showing each driver's realistic chance of becoming World Champion.
 
 ---
 
-## **Getting Started**
+## **Installation**
 
-### **Prerequisites**
-
-- Python 3.10+
-- pip
-- Jupyter Notebook or Google Colab (recommended)
-
-### **Installation**
-
-Clone the repository:
+Clone the repository and create a virtual environment:
 
 ```bash
 git clone https://github.com/priscillalea/f1-winner-predictor.git
 cd f1-winner-predictor
-Create and activate a virtual environment (optional but recommended):
+python -m venv venv
 
-bash
-Copy code
 # Windows
-python -m venv .venv
-.venv\Scripts\activate
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
 
-# macOS/Linux
-python -m venv .venv
-source .venv/bin/activate
-Install dependencies:
+# Install dependencies
+pip install fastf1 pandas scikit-learn xgboost plotly matplotlib seaborn jupyter
+```
 
-bash
-Copy code
-pip install pandas matplotlib numpy
-Ensure CSV files are in place:
+---
 
-bash
-Copy code
-csv/pitstop.csv
-csv/qualifying.csv
-csv/raceresult.csv
-Run the Notebook
-Jupyter Notebook:
+## **Running the Project**
 
-bash
-Copy code
-jupyter notebook f1.ipynb
-Open the notebook in your browser and execute cells sequentially to generate the analysis and plots.
-
-Google Colab:
-
-Open f1.ipynb in Colab.
-
-Upload CSV files to the environment or link from Google Drive.
-
-Run cells as usual.
-
-Notes:
-
-Charts will be saved in the plots/ folder in both PNG and SVG formats.
-
-You can modify team colors, add new metrics, or update data directly in the notebook.
-
-Future updates will include ML-based predictions for race winners.
-
-Usage
-Visualize pit stop performance, qualifying results, and race wins.
-
-Customize team colors or add additional metrics by modifying the notebook.
-
-Prepare for future ML-based winner predictions using historical data.
-
-Data Source
-All data collected manually from the official Formula 1 website: Formula 1 Results 2025
-
-Currently, the code includes only pit stop, qualifying, and race day results. Other data saved in this repository will be used in future updates for ML predictions.
-
-Results & Visualizations
-Charts generated:
-
-Average Pit Stop Time per Team
-
-Number of Pole Positions per Driver
-
-Number of Race Wins per Driver
-
-Example visualizations will be displayed inline in the notebook.
-
-Roadmap
-Add machine learning models to predict next GP winners.
-
-Include more datasets: lap times, weather conditions, tire strategies, etc.
-
-Improve visualizations with interactive plots (Plotly / Altair).
-
-Automate data scraping for future seasons.
-
-How This Fits My Learning Path
-Weekend ML Projects:
-
-K-Drama Recommender → TF-IDF & similarity, HTML/CSS frontend.
-
-Spam Detector → NLP pipeline with Multinomial Naive Bayes.
-
-F1 Performance Analysis → Tabular data, metrics, visualization, story-telling.
-
-This project allows me to combine passion (F1) with technical learning (Python, data analysis, visualization).
-
-Contributing
-Fork the repository
-
-Create a feature branch: git checkout -b feat/my-feature
-
-Commit changes with clear messages
-
-Open a pull request
-
-License
-MIT License — see LICENSE for details.
-
-Acknowledgments
-Official Formula 1 website for data
-
-Python, Pandas, Matplotlib communities for guidance
-
-My own weekend learning journey ❤️
+1. Start Jupyter Notebook from the project root:
+   ```bash
+   jupyter notebook
+   ```
+2. Open `notebooks/f1_2025_predictor.ipynb`.
+3. Run all cells from top to bottom.
+4. On the first run, FastF1 will download the race data into `data/cache/` — this may take a moment. All subsequent runs will be near-instant.
