@@ -200,13 +200,130 @@ section[data-testid="stSidebar"] {
 """
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
+# Premium refinement layer (overrides base styles; purely visual)
+REFINED_CSS = """
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+    --f1-red: #E10600; --f1-red-dim: rgba(225,6,0,0.14);
+    --bg: #08090B; --panel: #111318; --panel-2: #16191F;
+    --line: #22262E; --muted: #8B93A1; --text: #F5F6F8;
+}
+.stApp { background:
+    radial-gradient(1200px 400px at 85% -10%, rgba(225,6,0,0.08), transparent 60%),
+    linear-gradient(180deg, #0A0B0E 0%, #07080A 100%); }
+.block-container { padding-top: 1.6rem !important; padding-bottom: 2rem !important; max-width: 1400px; }
+header[data-testid="stHeader"] { background: transparent; }
+
+h1, h2, h3, .f1-title, .f1-hero-title, .kpi-value, .driver-name, .f1-section {
+    font-family: 'Titillium Web', 'Barlow Condensed', sans-serif !important;
+}
+
+/* Hero: compact header strip */
+.f1-hero { padding: 1rem 1.4rem; margin-bottom: 1rem; border-radius: 4px;
+    background: linear-gradient(90deg, #12141A 0%, #0B0C10 70%);
+    border: 1px solid var(--line); border-left: 4px solid var(--f1-red); }
+.f1-hero-title { font-size: 2rem; font-weight: 900; letter-spacing: 0.02em; }
+.f1-hero-sub { font-size: 0.88rem; margin-top: 0.3rem; color: var(--muted); }
+.f1-hero-kicker { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.18em; }
+
+/* KPI cards */
+.kpi-card { background: var(--panel); border: 1px solid var(--line); border-top: none;
+    border-radius: 4px; padding: 0.85rem 1.1rem; position: relative;
+    transition: border-color .2s ease, transform .2s ease; }
+.kpi-card::before { content: ""; position: absolute; left: 0; top: 0; height: 2px; width: 36px; background: var(--f1-red); }
+.kpi-card:hover { border-color: #3A3F4A; transform: translateY(-1px); }
+.kpi-label { font-family: 'JetBrains Mono', monospace; font-size: 0.66rem; letter-spacing: 0.14em; color: var(--muted); }
+.kpi-value { font-size: 1.75rem; font-weight: 700; }
+.kpi-sub { font-size: 0.75rem; }
+
+/* Winner prediction hero */
+.win-hero { position: relative; overflow: hidden; border-radius: 6px; padding: 1.3rem 1.6rem;
+    background: linear-gradient(115deg, #15171D 0%, #0D0E12 55%, #0A0B0E 100%);
+    border: 1px solid var(--line); height: 252px; box-sizing: border-box;
+    display: flex; flex-direction: column; justify-content: space-between; }
+.win-hero::after { content: ""; position: absolute; inset: 0 0 0 45%;
+    background: repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0 2px, transparent 2px 14px);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 60%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 60%); pointer-events: none; }
+.win-tag { display: inline-flex; align-items: center; gap: .5rem; font-family: 'JetBrains Mono', monospace;
+    font-size: .7rem; letter-spacing: .18em; color: var(--f1-red); text-transform: uppercase; }
+.win-tag .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--f1-red);
+    box-shadow: 0 0 0 0 rgba(225,6,0,.6); animation: pulse 1.8s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(225,6,0,.55);} 70% { box-shadow: 0 0 0 10px rgba(225,6,0,0);} 100% { box-shadow: 0 0 0 0 rgba(225,6,0,0);} }
+.win-race { color: var(--muted); font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; margin-top: .35rem; }
+.win-name { font-family: 'Titillium Web', sans-serif; font-weight: 900; font-size: 3rem; line-height: 1;
+    text-transform: uppercase; color: #fff; margin: .55rem 0 .15rem 0; letter-spacing: .01em; }
+.win-team { font-weight: 700; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; }
+.win-prob { font-family: 'Titillium Web', sans-serif; font-weight: 900; font-size: 3.4rem; line-height: 1; color: #fff; }
+.win-prob small { font-size: 1.3rem; color: var(--muted); font-weight: 600; }
+.win-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); position: relative; z-index: 1; }
+.win-stat-v { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.05rem; color: #fff; }
+.win-stat-l { font-size: .64rem; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+
+/* Timing-tower ranking */
+.tower { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: .9rem 1rem;
+    height: 252px; box-sizing: border-box; display: flex; flex-direction: column; }
+.tower-h { font-family: 'JetBrains Mono', monospace; font-size: .66rem; letter-spacing: .16em; color: var(--muted);
+    text-transform: uppercase; display: flex; justify-content: space-between; margin-bottom: .3rem; }
+.tower-row { display: grid; grid-template-columns: 28px 4px 1fr 64px; align-items: center; gap: .55rem;
+    flex: 1; padding: 0 .3rem; border-bottom: 1px solid #1B1E25; transition: background .15s ease; }
+.tower-row:last-child { border-bottom: none; }
+.tower-row:hover { background: #181B22; }
+.tower-pos { font-family: 'JetBrains Mono', monospace; font-weight: 700; color: #fff; font-size: .85rem; text-align: center; }
+.tower-bar { height: 18px; border-radius: 1px; }
+.tower-drv { font-family: 'Titillium Web', sans-serif; font-weight: 700; color: #fff; letter-spacing: .04em; }
+.tower-drv span { color: var(--muted); font-weight: 400; font-size: .75rem; margin-left: .4rem; }
+.tower-val { font-family: 'JetBrains Mono', monospace; font-size: .82rem; color: #fff; text-align: right; }
+.tower-row.lead .tower-pos { color: var(--f1-red); }
+
+/* Driver cards */
+.driver-card { border-radius: 4px; padding: .95rem 1.15rem; transition: transform .2s ease, border-color .2s ease; }
+.driver-card:hover { transform: translateY(-2px); border-color: #3A3F4A; }
+.driver-name { font-size: 1.3rem; }
+.driver-pos-badge { font-family: 'JetBrains Mono', monospace !important; font-size: 1.3rem; }
+.driver-gap-badge { font-family: 'JetBrains Mono', monospace !important; font-size: .68rem; }
+
+/* Section headers */
+.f1-section { font-size: 1.05rem; letter-spacing: .1em; margin: 1.3rem 0 .8rem 0; padding-bottom: .45rem;
+    display: flex; align-items: center; gap: .6rem; }
+.f1-accent { font-family: 'JetBrains Mono', monospace; font-size: .8rem; }
+
+.note { font-size: .74rem; color: var(--muted); margin-top: .45rem; }
+
+/* Sidebar */
+section[data-testid="stSidebar"] { background: #0A0B0E; border-right: 1px solid var(--line); }
+section[data-testid="stSidebar"] div[role="radiogroup"] { gap: 2px; }
+section[data-testid="stSidebar"] div[role="radiogroup"] > label {
+    padding: .55rem .7rem; border-radius: 3px; border-left: 2px solid transparent;
+    transition: background .15s ease, border-color .15s ease; margin: 0; width: 100%; }
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:hover { background: #14161C; }
+section[data-testid="stSidebar"] div[role="radiogroup"] > label:has(input:checked) {
+    background: var(--f1-red-dim); border-left-color: var(--f1-red); }
+section[data-testid="stSidebar"] div[role="radiogroup"] > label > div:first-child { display: none; }
+section[data-testid="stSidebar"] div[role="radiogroup"] p {
+    font-family: 'Titillium Web', sans-serif; font-weight: 600; font-size: .92rem; letter-spacing: .03em; }
+.side-meta { font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--muted); line-height: 1.8; }
+.side-meta b { color: #fff; font-weight: 700; }
+
+/* Widgets */
+div[data-testid="stDataFrame"] { border: 1px solid var(--line); border-radius: 4px; }
+div[data-testid="stPlotlyChart"] { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: .3rem; }
+.stAlert { border-radius: 4px; }
+</style>
+"""
+st.markdown(REFINED_CSS, unsafe_allow_html=True)
+
 PLOTLY_LAYOUT = dict(
-    paper_bgcolor="#0B0D10",
-    plot_bgcolor="#14171D",
-    font=dict(color="#E5E7EB", family="Inter, sans-serif"),
-    margin=dict(l=40, r=20, t=45, b=40),
-    xaxis=dict(gridcolor="#232832", zerolinecolor="#232832"),
-    yaxis=dict(gridcolor="#232832", zerolinecolor="#232832"),
+    paper_bgcolor="rgba(0,0,0,0)",
+    plot_bgcolor="rgba(0,0,0,0)",
+    font=dict(color="#C9CED6", family="Titillium Web, Inter, sans-serif", size=12),
+    title_font=dict(family="Titillium Web, sans-serif", size=14, color="#FFFFFF"),
+    margin=dict(l=40, r=20, t=48, b=40),
+    xaxis=dict(gridcolor="#1C1F26", zerolinecolor="#2A2E37", linecolor="#2A2E37"),
+    yaxis=dict(gridcolor="#1C1F26", zerolinecolor="#2A2E37", linecolor="#2A2E37"),
+    hoverlabel=dict(bgcolor="#16191F", bordercolor="#E10600", font=dict(family="JetBrains Mono, monospace", color="#FFFFFF")),
 )
 
 
@@ -226,7 +343,7 @@ def kpi_card(label: str, value: str, sub: str = ""):
 def driver_broadcast_card(rank: int, row: pd.Series, leader_pts: float):
     color = row["Color"]
     gap = leader_pts - row["Points"]
-    gap_str = "CHampionship Leader" if gap == 0 else f"-{gap:.0f} PTS TO LEADER"
+    gap_str = "Championship Leader" if gap == 0 else f"-{gap:.0f} PTS TO LEADER"
     st.markdown(
         f"""
         <div class="driver-card" style="border-left: 5px solid {color};">
@@ -297,17 +414,25 @@ wcc["Color"] = wcc["TeamName"].map(TEAM_COLORS).fillna("#888888")
 # ---------------------------------------------------------------------------
 # Sidebar Navigation
 # ---------------------------------------------------------------------------
+_best_mae_val = ml_res["eval_df"].loc[ml_res["eval_df"]["Model"] == ml_res["best_name"], "Test MAE"].values[0]
+
 with st.sidebar:
     st.markdown(
         """
-        <div style="padding: 0.5rem 0 1rem 0; border-bottom: 1px solid #232832; margin-bottom: 1rem;">
-            <div style="color:#E10600; font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:1.5rem; letter-spacing:0.08em;">
-                F1 ANALYTICS
-            </div>
-            <div style="color:#9CA3AF; font-size:0.78rem; letter-spacing:0.06em; text-transform:uppercase;">
-                2025 Season · Data & Prediction
+        <div style="padding: 0.2rem 0 1rem 0; border-bottom: 1px solid #22262E; margin-bottom: 0.9rem;">
+            <div style="display:flex; align-items:center; gap:.55rem;">
+                <div style="width:6px; height:30px; background:#E10600; transform:skewX(-14deg);"></div>
+                <div>
+                    <div style="color:#FFFFFF; font-family:'Titillium Web',sans-serif; font-weight:900; font-size:1.35rem; letter-spacing:0.06em; line-height:1;">
+                        F1 <span style="color:#E10600;">WINNER</span> PREDICTOR
+                    </div>
+                    <div style="color:#8B93A1; font-family:'JetBrains Mono',monospace; font-size:0.64rem; letter-spacing:0.16em; text-transform:uppercase; margin-top:.25rem;">
+                        2025 Season · Data &amp; ML
+                    </div>
+                </div>
             </div>
         </div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:.62rem; letter-spacing:.18em; color:#8B93A1; margin:.2rem 0 .4rem .2rem;">MODULES</div>
         """,
         unsafe_allow_html=True,
     )
@@ -324,12 +449,74 @@ with st.sidebar:
         label_visibility="collapsed",
     )
 
-    st.markdown("---")
-    st.caption(
-        f"**Dataset:** {df['Round'].nunique()} Race Weekends · {len(df)} Driver Entries\n\n"
-        f"**Best Model:** {ml_res['best_name']}\n\n"
-        f"**Test MAE:** {ml_res['eval_df'].loc[ml_res['eval_df']['Model'] == ml_res['best_name'], 'Test MAE'].values[0]:.2f} pos"
+    st.markdown(
+        f"""
+        <div style="border-top:1px solid #22262E; margin-top:1rem; padding-top:.9rem;" class="side-meta">
+            <div>DATASET &nbsp;<b>{df['Round'].nunique()} rounds · {len(df)} entries</b></div>
+            <div>BEST MODEL &nbsp;<b>{ml_res['best_name']}</b></div>
+            <div>TEST MAE &nbsp;<b>{_best_mae_val:.2f} pos</b></div>
+            <div>SOURCE &nbsp;<b>FastF1</b></div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
+
+
+@st.cache_data(show_spinner="Running 10,000 race simulations for the Abu Dhabi forecast...")
+def _default_forecast(model_name: str, feature_key: tuple):
+    """Baseline forecast = simulator defaults (official grid, σ 2.5, DNFs on, 10k runs) with the best model."""
+    pre = get_pre_race_features(df, target_round=24, grid_scenario="Official Qualifying Grid")
+    sim, _ = run_championship_simulation(
+        pre_race_df=pre, model=ml_res["models"][model_name], n_sim=10_000, noise_std=2.5, simulate_dnfs=True
+    )
+    return sim
+
+
+def winner_hero(sim: pd.DataFrame, model_name: str):
+    top = sim.sort_values("Race Win %", ascending=False).iloc[0]
+    full = wdc.set_index("Abbreviation")["FullName"].to_dict().get(top["Driver"], top["Driver"])
+    color = TEAM_COLORS.get(top["Team"], "#888888")
+    st.markdown(
+        f"""
+        <div class="win-hero" style="border-left:4px solid {color};">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; position:relative; z-index:1;">
+                <div>
+                    <div class="win-tag"><span class="dot"></span>Predicted Race Winner</div>
+                    <div class="win-race">Round 24 · Abu Dhabi Grand Prix · Season Finale</div>
+                    <div class="win-name">{full}</div>
+                    <div class="win-team" style="color:{color};">{top['Team']} · {top['Driver']}</div>
+                </div>
+                <div style="text-align:right;">
+                    <div class="win-stat-l">Win probability</div>
+                    <div class="win-prob">{top['Race Win %']:.1f}<small>%</small></div>
+                </div>
+            </div>
+            <div class="win-stats">
+                <div><div class="win-stat-v">P{top['Grid']:.0f}</div><div class="win-stat-l">Grid</div></div>
+                <div><div class="win-stat-v">P{top['Expected Finish']:.2f}</div><div class="win-stat-l">Expected finish</div></div>
+                <div><div class="win-stat-v">{top['Podium %']:.1f}%</div><div class="win-stat-l">Podium</div></div>
+                <div><div class="win-stat-v">{top['Title Prob %']:.1f}%</div><div class="win-stat-l">Title</div></div>
+                <div><div class="win-stat-v">{model_name}</div><div class="win-stat-l">Model</div></div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def win_tower(sim: pd.DataFrame, n: int = 6):
+    rows = sim.sort_values("Race Win %", ascending=False).head(n)
+    html = '<div class="tower"><div class="tower-h"><span>Win Probability · Top 6</span><span>Monte Carlo</span></div>'
+    for i, (_, r) in enumerate(rows.iterrows()):
+        c = TEAM_COLORS.get(r["Team"], "#888888")
+        html += (
+            f'<div class="tower-row {"lead" if i == 0 else ""}"><div class="tower-pos">{i + 1}</div>'
+            f'<div class="tower-bar" style="background:{c};"></div>'
+            f'<div class="tower-drv">{r["Driver"]}<span>{r["Team"]}</span></div>'
+            f'<div class="tower-val">{r["Race Win %"]:.1f}%</div></div>'
+        )
+    html += "</div>"
+    st.markdown(html, unsafe_allow_html=True)
 
 
 # ===========================================================================
@@ -338,18 +525,31 @@ with st.sidebar:
 if page == "01 — Season Overview":
     st.markdown(
         """
-        <div class="f1-hero">
-            <div class="f1-hero-kicker">2025 SEASON · DATA & PREDICTION</div>
-            <h1 class="f1-hero-title">F1 ANALYTICS & CHAMPIONSHIP PREDICTOR</h1>
-            <div class="f1-hero-sub">
-                From race data to predictions. Explore the 2025 season, compare machine learning models,
-                and simulate championship scenarios entering the season finale.
+        <div class="f1-hero" style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+                <div class="f1-hero-kicker">2025 SEASON · DATA → MACHINE LEARNING → PREDICTION</div>
+                <h1 class="f1-hero-title">F1 WINNER PREDICTOR</h1>
+                <div class="f1-hero-sub">Who wins the 2025 season finale? A model trained on 23 rounds of official race data, stress-tested with 10,000 Monte Carlo simulations.</div>
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
 
+    # 01 // Headline prediction (first thing on screen)
+    forecast = _default_forecast(ml_res["best_name"], tuple(FEATURES))
+    col_win, col_tower = st.columns([1.75, 1])
+    with col_win:
+        winner_hero(forecast, ml_res["best_name"])
+    with col_tower:
+        win_tower(forecast)
+    st.markdown(
+        '<div class="note">Baseline scenario: official qualifying grid · σ = 2.5 positions · stochastic DNFs on · 10,000 runs. '
+        'Probabilities depend on these assumptions — adjust them in <b>04 — Championship Simulator</b>.</div>',
+        unsafe_allow_html=True,
+    )
+
+    st.write("")
     best_row = ml_res["eval_df"][ml_res["eval_df"]["Model"] == ml_res["best_name"]].iloc[0]
     c1, c2, c3, c4 = st.columns(4)
     with c1:
@@ -362,14 +562,14 @@ if page == "01 — Season Overview":
         kpi_card("TEST MAE", f"{best_row['Test MAE']:.2f}", "Positions (temporal split)")
 
     # Top 3 Championship Contenders Broadcast Cards
-    st.markdown('<div class="f1-section"><span class="f1-accent">01 //</span> TITLE CONTENDERS — TOP 3 WDC</div>', unsafe_allow_html=True)
+    st.markdown('<div class="f1-section"><span class="f1-accent">02 //</span> TITLE CONTENDERS — TOP 3 WDC</div>', unsafe_allow_html=True)
     leader_pts = float(wdc.iloc[0]["Points"])
     p1_col, p2_col, p3_col = st.columns(3)
     for idx, col in enumerate([p1_col, p2_col, p3_col]):
         with col:
             driver_broadcast_card(idx + 1, wdc.iloc[idx], leader_pts)
 
-    st.markdown('<div class="f1-section"><span class="f1-accent">02 //</span> 2025 CHAMPIONSHIP STANDINGS</div>', unsafe_allow_html=True)
+    st.markdown('<div class="f1-section"><span class="f1-accent">03 //</span> 2025 CHAMPIONSHIP STANDINGS</div>', unsafe_allow_html=True)
 
     col_wdc, col_wcc = st.columns([1.25, 1])
 
@@ -393,7 +593,7 @@ if page == "01 — Season Overview":
             xaxis_title="Points",
             xaxis_range=[0, wdc["Points"].max() * 1.15],
         )
-        st.plotly_chart(fig_wdc, use_container_width=True)
+        st.plotly_chart(fig_wdc, width="stretch")
 
     with col_wcc:
         fig_wcc = go.Figure(
@@ -414,9 +614,9 @@ if page == "01 — Season Overview":
             xaxis_tickangle=-35,
             yaxis_range=[0, wcc["Points"].max() * 1.15],
         )
-        st.plotly_chart(fig_wcc, use_container_width=True)
+        st.plotly_chart(fig_wcc, width="stretch")
 
-    st.markdown('<div class="f1-section"><span class="f1-accent">03 //</span> CUMULATIVE POINTS EVOLUTION & FULL TABLE</div>', unsafe_allow_html=True)
+    st.markdown('<div class="f1-section"><span class="f1-accent">04 //</span> CUMULATIVE POINTS EVOLUTION & FULL TABLE</div>', unsafe_allow_html=True)
 
     top5_drivers = wdc.head(5)["Abbreviation"].tolist()
     df_top5 = df[df["Abbreviation"].isin(top5_drivers)].sort_values("Round").copy()
@@ -445,12 +645,12 @@ if page == "01 — Season Overview":
         height=380,
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
     )
-    st.plotly_chart(fig_cum, use_container_width=True)
+    st.plotly_chart(fig_cum, width="stretch")
 
     with st.expander("View Full 2025 Driver Standings Table (Broadcast View)", expanded=False):
         st.dataframe(
             wdc[["Rank", "Abbreviation", "FullName", "TeamName", "Wins", "Podiums", "AvgFinish", "Points"]],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "Rank": st.column_config.NumberColumn("Pos", format="%d"),
@@ -524,7 +724,7 @@ elif page == "02 — Race & Driver Analysis":
             )
         )
         fig_scatter.update_layout(**PLOTLY_LAYOUT, height=420, xaxis_title="Grid Position", yaxis_title="Finish Position")
-        st.plotly_chart(fig_scatter, use_container_width=True)
+        st.plotly_chart(fig_scatter, width="stretch")
 
     with col_b:
         dnf_rate = (
@@ -552,7 +752,7 @@ elif page == "02 — Race & Driver Analysis":
             xaxis_tickangle=-35,
             yaxis_range=[0, max(dnf_rate["DNF_pct"].max() * 1.2, 5)],
         )
-        st.plotly_chart(fig_dnf, use_container_width=True)
+        st.plotly_chart(fig_dnf, width="stretch")
 
     st.markdown('<div class="f1-section"><span class="f1-accent">02 //</span> HEAD-TO-HEAD DRIVER COMPARISON</div>', unsafe_allow_html=True)
 
@@ -585,7 +785,7 @@ elif page == "02 — Race & Driver Analysis":
         yaxis_autorange="reversed",
         height=350,
     )
-    st.plotly_chart(fig_h2h, use_container_width=True)
+    st.plotly_chart(fig_h2h, width="stretch")
 
 
 # ===========================================================================
@@ -618,11 +818,12 @@ elif page == "03 — Machine Learning Lab":
 
     st.markdown('<div class="f1-section"><span class="f1-accent">01 //</span> MODEL COMPARISON & FEATURE IMPORTANCE</div>', unsafe_allow_html=True)
 
-    col_tbl, col_imp = st.columns([1, 1.2])
+    col_tbl = st.container()
+    col_imp = st.container()
     with col_tbl:
         st.dataframe(
             ml_res["eval_df"],
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
             column_config={
                 "Train MAE": st.column_config.NumberColumn("Train MAE (pos)", format="%.3f"),
@@ -634,10 +835,6 @@ elif page == "03 — Machine Learning Lab":
                     max_value=1.0,
                 ),
             },
-        )
-        st.caption(
-            "**Features included:** `grid_pos`, `driver_avg_pos` (season rolling), `rolling_3_pos` (recent 3-race form), "
-            "`team_avg_pos`, and `dnf_rate`."
         )
 
     with col_imp:
@@ -652,19 +849,21 @@ elif page == "03 — Machine Learning Lab":
                 x=imp_df["Importance"],
                 y=imp_df["Feature"],
                 orientation="h",
-                marker_color="#E10600",
-                text=imp_df["Importance"].apply(lambda v: f"{v:.3f}"),
+                marker_color=["#E10600" if i == len(imp_df) - 1 else "#3A3F4A" for i in range(len(imp_df))],
+                width=0.5,
+                text=imp_df["Importance"].apply(lambda v: f"{v:.2f}"),
                 textposition="outside",
+                cliponaxis=False,
             )
         )
         fig_imp.update_layout(
             **PLOTLY_LAYOUT,
             title=f"Feature Importance — {ml_res['best_name']}",
-            height=300,
-            xaxis_title="Relative Importance",
-            xaxis_range=[0, imp_df["Importance"].max() * 1.22],
+            height=260,
         )
-        st.plotly_chart(fig_imp, use_container_width=True)
+        fig_imp.update_xaxes(visible=False, range=[0, imp_df["Importance"].max() * 1.15])
+        fig_imp.update_yaxes(showgrid=False)
+        st.plotly_chart(fig_imp, width="stretch")
 
     st.markdown('<div class="f1-section"><span class="f1-accent">02 //</span> RESIDUAL ANALYSIS: WHO OUTPERFORMS THE MODEL?</div>', unsafe_allow_html=True)
 
@@ -696,7 +895,7 @@ elif page == "03 — Machine Learning Lab":
             )
         )
         fig_pred.update_layout(**PLOTLY_LAYOUT, height=400, xaxis_title="Actual Position", yaxis_title="Predicted Position")
-        st.plotly_chart(fig_pred, use_container_width=True)
+        st.plotly_chart(fig_pred, width="stretch")
 
     with col_resid:
         resid_drv = (
@@ -722,7 +921,7 @@ elif page == "03 — Machine Learning Lab":
             xaxis_title="Predicted Pos − Actual Pos (Test Set)",
             xaxis_range=[resid_drv["Positions_vs_Model"].min() * 1.25, resid_drv["Positions_vs_Model"].max() * 1.25],
         )
-        st.plotly_chart(fig_res, use_container_width=True)
+        st.plotly_chart(fig_res, width="stretch")
 
     st.markdown('<div class="f1-section"><span class="f1-accent">03 //</span> RACE-BY-RACE PODIUM & ORDER INSPECTOR (TEST SET)</div>', unsafe_allow_html=True)
 
@@ -754,7 +953,7 @@ elif page == "03 — Machine Learning Lab":
     st.write("")
     st.dataframe(
         race_slice[["Position", "Predicted Rank", "Abbreviation", "TeamName", "grid_pos", pred_col, "Positions_vs_Model"]].head(10),
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
         column_config={
             "Position": st.column_config.NumberColumn("Actual Pos", format="P%d"),
@@ -844,7 +1043,7 @@ elif page == "04 — Championship Simulator":
     # Section 1: Mathematical Title Scenarios
     st.markdown('<div class="f1-section"><span class="f1-accent">01 //</span> MATHEMATICAL TITLE SCENARIOS (ENTERING ABU DHABI)</div>', unsafe_allow_html=True)
     math_df = build_title_scenarios_summary(pre_race_df)
-    st.dataframe(math_df, use_container_width=True, hide_index=True)
+    st.dataframe(math_df, width="stretch", hide_index=True)
 
     # Section 2: Monte Carlo Title Probability
     st.markdown('<div class="f1-section"><span class="f1-accent">02 //</span> MONTE CARLO TITLE PROBABILITY & CONTENDERS</div>', unsafe_allow_html=True)
@@ -872,14 +1071,14 @@ elif page == "04 — Championship Simulator":
             height=390,
             yaxis_range=[0, max(contenders["Title Prob %"].max() * 1.2, 10)],
         )
-        st.plotly_chart(fig_prob, use_container_width=True)
+        st.plotly_chart(fig_prob, width="stretch")
 
     with col_tbl:
         st.dataframe(
             sim_df.head(10),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
-            height=390,
+            height=402,
             column_config={
                 "Grid": st.column_config.NumberColumn("Grid", format="P%.1f"),
                 "Current Points": st.column_config.NumberColumn("Pts", format="%d"),
@@ -922,7 +1121,7 @@ elif page == "04 — Championship Simulator":
         yaxis_title="Finishing Position",
         showlegend=False,
     )
-    st.plotly_chart(fig_dist, use_container_width=True)
+    st.plotly_chart(fig_dist, width="stretch")
 
 
 # ===========================================================================
@@ -943,7 +1142,7 @@ elif page == "05 — About the Model":
     )
 
     st.markdown(
-        """
+        r"""
         ### 1. Dataset & Sources
         - **Source:** Official Formula 1 timing & race results via the `fastf1` Python library, cached locally in `data/cache/`.
         - **Scope:** 2025 Formula 1 World Championship (Rounds 1–23 up to Qatar GP, plus official pre-race grid for Round 24 Abu Dhabi).
