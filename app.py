@@ -537,10 +537,10 @@ if page == "01 — Season Overview":
     )
 
     # 01 // Headline prediction (first thing on screen)
-    forecast = _default_forecast(ml_res["best_name"], tuple(FEATURES))
+    forecast = _default_forecast("Random Forest", tuple(FEATURES))
     col_win, col_tower = st.columns([1.75, 1])
     with col_win:
-        winner_hero(forecast, ml_res["best_name"])
+        winner_hero(forecast, "Random Forest")
     with col_tower:
         win_tower(forecast)
     st.markdown(
