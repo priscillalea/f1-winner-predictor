@@ -1,3 +1,4 @@
+import json
 import os
 import warnings
 import pandas as pd
@@ -8,7 +9,8 @@ warnings.filterwarnings("ignore")
 
 YEAR = 2025
 DEFAULT_LAST_ROUND = 23  # Qatar GP — last known race before Abu Dhabi
-CACHE_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "cache")
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+CACHE_DIR = os.path.join(DATA_DIR, "cache")
 
 TEAM_COLORS = {
     "McLaren": "#FF8000",
@@ -27,9 +29,20 @@ F1_POINTS = {1: 25, 2: 18, 3: 15, 4: 12, 5: 10, 6: 8, 7: 6, 8: 4, 9: 2, 10: 1}
 FEATURES = ["grid_pos", "driver_avg_pos", "rolling_3_pos", "team_avg_pos", "dnf_rate"]
 
 
-@st.cache_data(show_spinner="Loading 2025 F1 season data from FastF1 cache...")
+@st.cache_data(show_spinner="Loading 2025 F1 season data...")
 def load_season(year: int = YEAR, up_to_round: int = DEFAULT_LAST_ROUND) -> pd.DataFrame:
     """Load race results for all completed rounds up to and including `up_to_round`."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    snapshot_path = os.path.join(DATA_DIR, f"season_{year}_r1_{up_to_round}.csv")
+    if os.path.exists(snapshot_path):
+        df_all = pd.read_csv(snapshot_path, parse_dates=["EventDate"])
+        df_all["GridPosition"] = pd.to_numeric(df_all["GridPosition"], errors="coerce").fillna(20)
+        df_all["Position"] = pd.to_numeric(df_all["Position"], errors="coerce").fillna(20)
+        df_all["Points"] = pd.to_numeric(df_all["Points"], errors="coerce").fillna(0)
+        df_all["DNF"] = pd.to_numeric(df_all["DNF"], errors="coerce").fillna(0).astype(int)
+        df_all["Round"] = pd.to_numeric(df_all["Round"], errors="coerce").astype(int)
+        return df_all
+
     os.makedirs(CACHE_DIR, exist_ok=True)
     fastf1.Cache.enable_cache(CACHE_DIR)
 
@@ -68,12 +81,19 @@ def load_season(year: int = YEAR, up_to_round: int = DEFAULT_LAST_ROUND) -> pd.D
     df_all["Position"] = pd.to_numeric(df_all["Position"], errors="coerce").fillna(20)
     df_all["Points"] = pd.to_numeric(df_all["Points"], errors="coerce").fillna(0)
     df_all["DNF"] = (~df_all["Status"].astype(str).str.contains("Finished", na=False)).astype(int)
+    df_all.to_csv(snapshot_path, index=False)
     return df_all
 
 
 @st.cache_data(show_spinner=False)
 def load_official_grid(year: int = YEAR, target_round: int = 24) -> dict[str, float]:
-    """Load official starting grid positions for `target_round` from FastF1 cache (pre-race info)."""
+    """Load official starting grid positions for `target_round` (pre-race info)."""
+    os.makedirs(DATA_DIR, exist_ok=True)
+    snapshot_path = os.path.join(DATA_DIR, f"official_grid_{year}_r{target_round}.json")
+    if os.path.exists(snapshot_path):
+        with open(snapshot_path, "r", encoding="utf-8") as f:
+            return {k: float(v) for k, v in json.load(f).items()}
+
     os.makedirs(CACHE_DIR, exist_ok=True)
     fastf1.Cache.enable_cache(CACHE_DIR)
     try:
@@ -82,7 +102,10 @@ def load_official_grid(year: int = YEAR, target_round: int = 24) -> dict[str, fl
         res = pd.DataFrame(session.results[["Abbreviation", "GridPosition"]].to_dict(orient="list"))
         res["GridPosition"] = pd.to_numeric(res["GridPosition"], errors="coerce").fillna(20)
         res.loc[res["GridPosition"] <= 0, "GridPosition"] = 20
-        return dict(zip(res["Abbreviation"], res["GridPosition"]))
+        grid = {str(k): float(v) for k, v in zip(res["Abbreviation"], res["GridPosition"])}
+        with open(snapshot_path, "w", encoding="utf-8") as f:
+            json.dump(grid, f, indent=2)
+        return grid
     except Exception:
         return {}
 
